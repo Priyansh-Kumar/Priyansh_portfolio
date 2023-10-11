@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myprotfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(141, 141, 237);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            margin-left: 20px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 70px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+
+        }
+
+        .name {
+            color: rgb(168, 117, 168);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: -20px 0px;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 270px;
+        }
+
+        .image-top {
+            width: 120px;
+            position: relative;
+            top: -30px;
+            left: 260px;
+            margin-left: 250px;
+        }
+
+        .vertical-title {
+            position: relative;
+            width: 150px;
+            top: 90px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+            top: 90px;
+
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.589);
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+        }
+        .footer .footer-first h3{
+            margin-left: 500px;
+        }
+        .footer .footer-second img{
+            width: 40px;
+            margin-top:50px;
+            margin-left: -130px;
+        }
+        .footer .footer-third img{
+            width: 40px;
+            margin-top:50px;
+            margin-left: -60px;
+        }
+        .footer .footer-fourth img{
+            width: 40px;
+            margin-top:50px;
+        
+        }
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+        .thirdsection #about {
+            font-size: small;
+            color: gray;
+
+        }
+        .thirdsection .skills{
+            background: white;
+            width: 80vw;
+            height: 1px;
+            margin: 1px 10px;
+            display: flex;
+        }
+        .thirdsection h3{
+            margin-top: 20px;
+            margin-left: 540px;
+        }
+        
+        .thirdsection .c{
+            background: white;
+            width: 1px;
+            height: 80px;
+            display: flex;
+        }
+        .thirdsection .skills .cpro{
+           margin-top: 80px;
+           margin-left: -5px;
+        }
+        .thirdsection .cplus{
+            background: white;
+            width: 1px;
+            height: 80px;
+            margin-left: 190px;
+            display: flex;
+         }
+         .thirdsection .sql{
+            background: white;
+            width: 1px;
+            height: 80px;
+            margin-left: 230px;
+            display: flex;
+         }
+         .thirdsection .html{
+            background: white;
+            width: 1px;
+            height: 80px;
+            margin-left: 280px;
+            display: flex;
+         }
+         .thirdsection .css{
+            background: white;
+            width: 1px;
+            height: 80px;
+            margin-left: 250px;
+            display: flex;
+         }
+         
+         .thirdsection .js{
+            background: white;
+            width: 1px;
+            height: 80px;
+            margin-left: 234px;
+            display: flex;
+         }
+         .thirdsection .js .cpro{
+           margin-left: -30px;
+         }
+         .thirdsection .c-img{
+            width: 30px;
+            height: 30px;
+            margin-top: -30%;
+         }
+         .thirdsection .cplus-img{
+            width: 30px;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 155px;
+         }
+         .thirdsection .sql-img{
+            width: 30px;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 195px;
+         }
+         .thirdsection .html-img{
+            width: 30px;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 245px;
+         }
+         .thirdsection .css-img{
+            width: 30px;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 218px;
+         }
+         .thirdsection .js-img{
+            width: 30px;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 176px;
+         }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" id="home">Priyansh's Protfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#locate-footer">Contact Me</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name <span class="name">Priyansh</span>, and I am
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="uperimg1.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="grey">What I have done so far</span>
+            <h1 id="project">Projects</h1>
+            <img class="image-top" src="project3.png">
+            <div class="box">
+                <div class="vertical">
+
+                    <div class="vertical-title">Movie Recommender System</div>
+
+                    <div class="vertical-desc">To filter and predict only those movies that a corresponding user is
+                        most likely to want to watch.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Email Spam Classifier</div>
+
+                    <div class="vertical-desc">User the text of an email and model will detect wheather the email is
+                        spam or ham.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <h1 id="about">What I learned so far</h1>
+            <h3>Skills</h3>
+            
+            <img class="c-img" src="cprograming.png">
+            <img class="cplus-img" src="cplus.png">
+            <img class="sql-img" src="sql.png">
+            <img class="html-img" src="html.png">
+            <img class="css-img" src="css.png">
+            <img class="js-img" src="js.png">
+            <div class="skills">
+                
+                <div class="c">
+                    <div class="cpro">C Programming</div>
+                </div>
+                <div class="cplus">
+                    <div class="cpro">C++</div>
+                </div>
+                <div class="sql">
+                    <div class="cpro">SQL</div>
+                </div>
+                <div class="html">
+                    <div class="cpro">HTML</div>
+                </div>
+                <div class="css">
+                    <div class="cpro">CSS</div>
+                </div>
+                <div class="js">
+                    <div class="cpro">JavaScript</div>
+                </div>
+            </div>
+
+            </div>
+
+            
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer" id="locate-footer">
+            <div class="footer-first">
+                <h3>Connect</h3>
+            </div>
+            <div class="footer-second">
+                <a href="https://www.instagram.com/priyansh_bhardwaj_offical/" target="_blank">
+                    <img src="insta1.png"></a>
+            </div>
+            <div class="footer-third">
+                <a href="https://www.linkedin.com/in/priyansh-kumar-a402b9217/" target="_blank">
+                    <img src="link1.png"></a>
+            </div>
+            <div class="footer-fourth">
+                <a href="https://github.com/Priyansh-Kumar" target="_blank">
+                    <img src="github.png"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['a final Year MCA Student.', 'a Web Developer.'],
+            typeSpeed: 80,
+        });
+
+    </script>
+</body>
+
+</html>
